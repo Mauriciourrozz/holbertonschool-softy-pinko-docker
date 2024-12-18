@@ -1,0 +1,6 @@
+# Utiliza la última imagen base de Ubuntu
+FROM ubuntu:latest
+# Actualice APT y actualice todo el software
+RUN apt-get update && apt-get upgrade -y
+# Configura el comando para imprimir "¡Hola, mundo!" a la terminal
+CMD ["echo", "Hello, World!"]
